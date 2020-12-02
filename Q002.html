@@ -1,0 +1,13 @@
+<script>
+    function exponent(x, y){
+        if (y === 0)
+        {
+            return 1;
+        } 
+        else{
+            return x * exponent(x, y-1);
+        }
+    }
+
+    console.log('Exponent: ', exponent(10,2));
+</script>
